@@ -1,0 +1,46 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+    operators.operatorframework.io/builder: operator-sdk-v1.0.0+git
+    operators.operatorframework.io/project_layout: go.kubebuilder.io/v2
+  name: doo.vX.Y.Z
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Doo is the Schema for the dooes API
+      displayName: Doo
+      kind: Doo
+      name: doos.cache.example.com
+      version: v1
+  description: doo-operator
+  displayName: doo-operator
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - app:database
+  links:
+  - name: Doo
+    url: https://doo.domain
+  maturity: alpha
+  provider:
+    name: jeff
+  version: 0.0.0

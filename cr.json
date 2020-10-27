@@ -1,0 +1,10 @@
+        {
+          "apiVersion": "cache.example.com/v1",
+          "kind": "Doo",
+          "metadata": {
+            "name": "doo-sample"
+          },
+          "spec": {
+            "foo": "bar"
+          }
+        }

@@ -1,0 +1,11 @@
+domain: example.com
+layout: go.kubebuilder.io/v2
+projectName: doo
+repo: github.com/example-inc/doo-operator
+resources:
+- group: cache
+  kind: Doo
+  version: v1
+version: 3-alpha
+plugins:
+  go.sdk.operatorframework.io/v2-alpha: {}

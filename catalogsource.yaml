@@ -1,0 +1,8 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: doo-operator
+  namespace: jeff-operators
+spec:
+  sourceType: grpc
+  image: quay.io/jemccorm/doo-operator-index:v0.0.1
